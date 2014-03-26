@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class Task {
+abstract class Task {
     private JFrame frame;
     protected JTextArea textArea;
     protected JTextField textField;
@@ -96,3 +96,5 @@ public abstract class Task {
         return value;
     }
 }
+
+
