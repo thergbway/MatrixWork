@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" name="Default" comment="Changed file structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task5.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task6.java" />
-      <change type="DELETED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Tasks.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainFrame.java" afterPath="$PROJECT_DIR$/src/MainFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MatrixWork.iws" afterPath="$PROJECT_DIR$/MatrixWork.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
     </list>
     <ignored path="MatrixWork.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Task.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395868566224" ignored="false" />
+    <file path="/Task.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395872073434" ignored="false" />
     <file path="/fragment.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395395708319" ignored="false" />
     <file path="/Matrix.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395871155662" ignored="false" />
     <file path="/Vector.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395870957153" ignored="false" />
     <file path="/Main.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395863564362" ignored="false" />
-    <file path="/MainFrame.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395870549335" ignored="false" />
+    <file path="/MainFrame.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395871988136" ignored="false" />
     <file path="/Tasks.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395870501188" ignored="false" />
-    <file path="/Dummy.txt" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395871573538" ignored="false" />
+    <file path="/Dummy.txt" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395871866717" ignored="false" />
     <file path="$USER_HOME$/Desktop/AccountService/src/Server/Statistics.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395863864797" ignored="false" />
     <file path="/a.dummy" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395866803260" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +37,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -74,7 +72,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -84,26 +82,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task5.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Task5.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Task5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="199" selection-end="199" vertical-scroll-proportion="0.26608697">
+            <state line="20" column="38" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="e#161#684#0" expanded="true" />
                 <element signature="e#673#674#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Task.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="33" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="method#Task#0;class#Task#0" expanded="false" />
-                <element signature="method#readLine#0;class#Task#0" expanded="false" />
-                <element signature="method#readInt#0;class#Task#0" expanded="false" />
-              </folding>
+            <state line="10" column="54" selection-start="328" selection-end="328" vertical-scroll-proportion="0.20659722">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,10 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/Task6.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#161#662#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,46 +115,45 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+            <state line="7" column="48" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="method#MainFrame#0;class#MainFrame#0" expanded="false" />
                 <element signature="method#getActionListenerByTaskIndex#0;class#MainFrame#0" expanded="false" />
-                <element signature="class#1557:1711" expanded="false" />
-                <element signature="method#actionPerformed#0;class#1557:1711" expanded="false" />
-                <element signature="class#1760:1914" expanded="false" />
-                <element signature="method#actionPerformed#0;class#1760:1914" expanded="false" />
-                <element signature="class#1963:2117" expanded="false" />
-                <element signature="method#actionPerformed#0;class#1963:2117" expanded="false" />
-                <element signature="class#2166:2320" expanded="false" />
-                <element signature="method#actionPerformed#0;class#2166:2320" expanded="false" />
-                <element signature="class#2847:3001" expanded="false" />
-                <element signature="method#actionPerformed#0;class#2847:3001" expanded="false" />
-                <element signature="class#3050:3204" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3050:3204" expanded="false" />
-                <element signature="class#3253:3407" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3253:3407" expanded="false" />
-                <element signature="class#3457:3611" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3457:3611" expanded="false" />
-                <element signature="class#3661:3815" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3661:3815" expanded="false" />
-                <element signature="class#3865:4019" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3865:4019" expanded="false" />
-                <element signature="class#4069:4223" expanded="false" />
-                <element signature="method#actionPerformed#0;class#4069:4223" expanded="false" />
-                <element signature="class#4273:4427" expanded="false" />
-                <element signature="method#actionPerformed#0;class#4273:4427" expanded="false" />
-                <element signature="class#4477:4631" expanded="false" />
-                <element signature="method#actionPerformed#0;class#4477:4631" expanded="false" />
-                <element signature="class#4681:4835" expanded="false" />
-                <element signature="method#actionPerformed#0;class#4681:4835" expanded="false" />
-                <element signature="class#4885:5039" expanded="false" />
-                <element signature="method#actionPerformed#0;class#4885:5039" expanded="false" />
-                <element signature="class#5089:5243" expanded="false" />
-                <element signature="method#actionPerformed#0;class#5089:5243" expanded="false" />
-                <element signature="class#5293:5447" expanded="false" />
-                <element signature="method#actionPerformed#0;class#5293:5447" expanded="false" />
-                <element signature="class#5497:5651" expanded="false" />
-                <element signature="method#actionPerformed#0;class#5497:5651" expanded="false" />
+                <element signature="class#1741:1895" expanded="false" />
+                <element signature="method#actionPerformed#0;class#1741:1895" expanded="false" />
+                <element signature="class#1944:2098" expanded="false" />
+                <element signature="method#actionPerformed#0;class#1944:2098" expanded="false" />
+                <element signature="class#2147:2301" expanded="false" />
+                <element signature="method#actionPerformed#0;class#2147:2301" expanded="false" />
+                <element signature="class#2350:2504" expanded="false" />
+                <element signature="method#actionPerformed#0;class#2350:2504" expanded="false" />
+                <element signature="class#3031:3185" expanded="false" />
+                <element signature="method#actionPerformed#0;class#3031:3185" expanded="false" />
+                <element signature="class#3234:3388" expanded="false" />
+                <element signature="method#actionPerformed#0;class#3234:3388" expanded="false" />
+                <element signature="class#3437:3591" expanded="false" />
+                <element signature="method#actionPerformed#0;class#3437:3591" expanded="false" />
+                <element signature="class#3641:3795" expanded="false" />
+                <element signature="method#actionPerformed#0;class#3641:3795" expanded="false" />
+                <element signature="class#3845:3999" expanded="false" />
+                <element signature="method#actionPerformed#0;class#3845:3999" expanded="false" />
+                <element signature="class#4049:4203" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4049:4203" expanded="false" />
+                <element signature="class#4253:4407" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4253:4407" expanded="false" />
+                <element signature="class#4457:4611" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4457:4611" expanded="false" />
+                <element signature="class#4661:4815" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4661:4815" expanded="false" />
+                <element signature="class#4865:5019" expanded="false" />
+                <element signature="method#actionPerformed#0;class#4865:5019" expanded="false" />
+                <element signature="class#5069:5223" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5069:5223" expanded="false" />
+                <element signature="class#5273:5427" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5273:5427" expanded="false" />
+                <element signature="class#5477:5631" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5477:5631" expanded="false" />
+                <element signature="class#5681:5835" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5681:5835" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -188,14 +179,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/Matrix.java" />
         <option value="$PROJECT_DIR$/src/Vector.java" />
-        <option value="$PROJECT_DIR$/src/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/matrix/Vector.java" />
         <option value="$PROJECT_DIR$/src/matrix/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/Task.java" />
         <option value="$PROJECT_DIR$/src/Task5.java" />
         <option value="$PROJECT_DIR$/src/Tasks.java" />
         <option value="$PROJECT_DIR$/src/Task6.java" />
+        <option value="$PROJECT_DIR$/src/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/Task.java" />
       </list>
     </option>
   </component>
@@ -233,7 +224,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -287,6 +277,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,8 +513,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67112595" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -593,6 +584,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#getActionListenerByTaskIndex#0;class#MainFrame#0" expanded="false" />
+            <element signature="class#1741:1895" expanded="false" />
+            <element signature="method#actionPerformed#0;class#1741:1895" expanded="false" />
+            <element signature="class#1944:2098" expanded="false" />
+            <element signature="method#actionPerformed#0;class#1944:2098" expanded="false" />
+            <element signature="class#2147:2301" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2147:2301" expanded="false" />
+            <element signature="class#2350:2504" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2350:2504" expanded="false" />
+            <element signature="class#3031:3185" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3031:3185" expanded="false" />
+            <element signature="class#3234:3388" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3234:3388" expanded="false" />
+            <element signature="class#3437:3591" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3437:3591" expanded="false" />
+            <element signature="class#3641:3795" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3641:3795" expanded="false" />
+            <element signature="class#3845:3999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3845:3999" expanded="false" />
+            <element signature="class#4049:4203" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4049:4203" expanded="false" />
+            <element signature="class#4253:4407" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4253:4407" expanded="false" />
+            <element signature="class#4457:4611" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4457:4611" expanded="false" />
+            <element signature="class#4661:4815" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4661:4815" expanded="false" />
+            <element signature="class#4865:5019" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4865:5019" expanded="false" />
+            <element signature="class#5069:5223" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5069:5223" expanded="false" />
+            <element signature="class#5273:5427" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5273:5427" expanded="false" />
+            <element signature="class#5477:5631" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5477:5631" expanded="false" />
+            <element signature="class#5681:5835" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5681:5835" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/javax/swing/text/JTextComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1618" column="16" selection-start="59604" selection-end="59604" vertical-scroll-proportion="0.5086108">
@@ -616,37 +652,27 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/StrictMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="0" selection-start="12282" selection-end="12282" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="339" column="0" selection-start="12282" selection-end="12282" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="423" column="0" selection-start="16155" selection-end="16155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="423" column="0" selection-start="16155" selection-end="16155" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/rt.jar!/sun/misc/FormattedFloatingDecimal.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="17" selection-start="3784" selection-end="3784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="93" column="17" selection-start="3784" selection-end="3784" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3189" column="0" selection-start="128585" selection-end="128585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3189" column="0" selection-start="128585" selection-end="128585" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/rt.jar!/sun/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="23" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.7017544">
-          <folding />
-        </state>
+        <state line="325" column="23" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.7017544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -685,79 +711,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="38" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#161#684#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="66" selection-start="1484" selection-end="1484" vertical-scroll-proportion="0.0">
+        <state line="7" column="48" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="method#MainFrame#0;class#MainFrame#0" expanded="false" />
             <element signature="method#getActionListenerByTaskIndex#0;class#MainFrame#0" expanded="false" />
-            <element signature="class#1557:1711" expanded="false" />
-            <element signature="method#actionPerformed#0;class#1557:1711" expanded="false" />
-            <element signature="class#1760:1914" expanded="false" />
-            <element signature="method#actionPerformed#0;class#1760:1914" expanded="false" />
-            <element signature="class#1963:2117" expanded="false" />
-            <element signature="method#actionPerformed#0;class#1963:2117" expanded="false" />
-            <element signature="class#2166:2320" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2166:2320" expanded="false" />
-            <element signature="class#2847:3001" expanded="false" />
-            <element signature="method#actionPerformed#0;class#2847:3001" expanded="false" />
-            <element signature="class#3050:3204" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3050:3204" expanded="false" />
-            <element signature="class#3253:3407" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3253:3407" expanded="false" />
-            <element signature="class#3457:3611" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3457:3611" expanded="false" />
-            <element signature="class#3661:3815" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3661:3815" expanded="false" />
-            <element signature="class#3865:4019" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3865:4019" expanded="false" />
-            <element signature="class#4069:4223" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4069:4223" expanded="false" />
-            <element signature="class#4273:4427" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4273:4427" expanded="false" />
-            <element signature="class#4477:4631" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4477:4631" expanded="false" />
-            <element signature="class#4681:4835" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4681:4835" expanded="false" />
-            <element signature="class#4885:5039" expanded="false" />
-            <element signature="method#actionPerformed#0;class#4885:5039" expanded="false" />
-            <element signature="class#5089:5243" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5089:5243" expanded="false" />
-            <element signature="class#5293:5447" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5293:5447" expanded="false" />
-            <element signature="class#5497:5651" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5497:5651" expanded="false" />
+            <element signature="class#1741:1895" expanded="false" />
+            <element signature="method#actionPerformed#0;class#1741:1895" expanded="false" />
+            <element signature="class#1944:2098" expanded="false" />
+            <element signature="method#actionPerformed#0;class#1944:2098" expanded="false" />
+            <element signature="class#2147:2301" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2147:2301" expanded="false" />
+            <element signature="class#2350:2504" expanded="false" />
+            <element signature="method#actionPerformed#0;class#2350:2504" expanded="false" />
+            <element signature="class#3031:3185" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3031:3185" expanded="false" />
+            <element signature="class#3234:3388" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3234:3388" expanded="false" />
+            <element signature="class#3437:3591" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3437:3591" expanded="false" />
+            <element signature="class#3641:3795" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3641:3795" expanded="false" />
+            <element signature="class#3845:3999" expanded="false" />
+            <element signature="method#actionPerformed#0;class#3845:3999" expanded="false" />
+            <element signature="class#4049:4203" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4049:4203" expanded="false" />
+            <element signature="class#4253:4407" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4253:4407" expanded="false" />
+            <element signature="class#4457:4611" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4457:4611" expanded="false" />
+            <element signature="class#4661:4815" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4661:4815" expanded="false" />
+            <element signature="class#4865:5019" expanded="false" />
+            <element signature="method#actionPerformed#0;class#4865:5019" expanded="false" />
+            <element signature="class#5069:5223" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5069:5223" expanded="false" />
+            <element signature="class#5273:5427" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5273:5427" expanded="false" />
+            <element signature="class#5477:5631" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5477:5631" expanded="false" />
+            <element signature="class#5681:5835" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5681:5835" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#Task#0;class#Task#0" expanded="false" />
-            <element signature="method#readLine#0;class#Task#0" expanded="false" />
-            <element signature="method#readInt#0;class#Task#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#161#662#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="199" selection-end="199" vertical-scroll-proportion="0.26608697">
-          <folding>
-            <element signature="e#673#674#0" expanded="true" />
-          </folding>
+        <state line="10" column="54" selection-start="328" selection-end="328" vertical-scroll-proportion="0.20659722">
+          <folding />
         </state>
       </provider>
     </entry>

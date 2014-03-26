@@ -10,8 +10,11 @@ abstract class Task {
     private final Object readLineMonitor= new Object();
     private static int MIN_WEIGHT= 800;
     private static int MIN_HEIGHT= 500;
+    private static final int FRAME_POSITION_X= 600;
+    private static final int FRAME_POSITION_Y= 200;
     public Task(String taskTitle){
         frame= new JFrame(taskTitle);
+        frame.setBounds(FRAME_POSITION_X, FRAME_POSITION_Y, frame.getWidth(), frame.getHeight());
         GridBagLayout gbl= new GridBagLayout();
         frame.setLayout(gbl);
 

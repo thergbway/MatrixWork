@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 
 public class MainFrame extends JFrame {
     private JButton[] startTaskButtons;
+    private static final int FRAME_POSITION_X= 200;
+    private static final int FRAME_POSITION_Y= 200;
     private static final int TASK_COUNT= 20;
     private static final String[] TASK_NAMES= new String[]{
             "1 Not done yet",
@@ -32,6 +34,7 @@ public class MainFrame extends JFrame {
     public MainFrame(String s){
         super(s);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setBounds(FRAME_POSITION_X, FRAME_POSITION_Y, getWidth(), getHeight());
 
         setLayout(new GridLayout(0,1));
         startTaskButtons = new JButton[TASK_COUNT];
