@@ -16,7 +16,7 @@ public class Task19 extends Task {
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Матрица, в которой столбцы переставлены в порядке убывания их характеристик: " +
+                textArea.append("Матрица, в которой столбцы переставлены в порядке убывания их характеристик: \n\n" +
                        m.getMatrixWithIncreasingCharacteristic() + "\n\n");
             }
         }).start();
