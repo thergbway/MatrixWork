@@ -1,8 +1,10 @@
+package task;
+
 import matrix.Matrix;
 
-class Task6 extends Task{
-    public Task6(){
-        super("Task 6");
+public class Task19 extends Task {
+    public Task19(){
+        super("task.Task 19");
     }
     @Override
     public void execute() {
@@ -14,7 +16,8 @@ class Task6 extends Task{
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Норма матрицы: " + m.getEuclidNorm() + "\n");
+                textArea.append("Матрица, в которой столбцы переставлены в порядке убывания их характеристик: " +
+                       m.getMatrixWithIncreasingCharacteristic() + "\n\n");
             }
         }).start();
     }

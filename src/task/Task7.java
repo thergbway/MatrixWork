@@ -1,8 +1,10 @@
+package task;
+
 import matrix.Matrix;
 
-class Task5 extends Task{
-    public Task5(){
-        super("Task 5");
+public class Task7 extends Task {
+    public Task7(){
+        super("task.Task 7");
     }
     @Override
     public void execute() {
@@ -14,7 +16,9 @@ class Task5 extends Task{
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Транспонированная матрица: \n\n" + m.getTransposedMatrix() + "\n");
+                textArea.append("Повернутая на 90 градусов матрица: \n\n" + m.get90DegreeTurnedMatrix() + "\n\n");
+                textArea.append("Повернутая на 180 градусов матрица: \n\n" + m.get180DegreeTurnedMatrix() + "\n\n");
+                textArea.append("Повернутая на 270 градусов матрица: \n\n" + m.get270DegreeTurnedMatrix() + "\n\n");
             }
         }).start();
     }

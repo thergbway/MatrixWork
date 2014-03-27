@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task19.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task7.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task8.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Task9.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task.java" afterPath="$PROJECT_DIR$/src/task/Task.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task19.java" afterPath="$PROJECT_DIR$/src/task/Task19.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task5.java" afterPath="$PROJECT_DIR$/src/task/Task5.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task6.java" afterPath="$PROJECT_DIR$/src/task/Task6.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task7.java" afterPath="$PROJECT_DIR$/src/task/Task7.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task8.java" afterPath="$PROJECT_DIR$/src/task/Task8.java" />
+      <change type="MOVED" beforePath="C:\Main\Google Диск\Docs\Programming\PracticeJAVA\Java@EPAM\MatrixWork\src\Task9.java" afterPath="$PROJECT_DIR$/src/task/Task9.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainFrame.java" afterPath="$PROJECT_DIR$/src/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/matrix/Matrix.java" afterPath="$PROJECT_DIR$/src/matrix/Matrix.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MatrixWork.iws" afterPath="$PROJECT_DIR$/MatrixWork.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Task.java" afterPath="$PROJECT_DIR$/src/Task.java" />
     </list>
     <ignored path="MatrixWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,13 +22,15 @@
     <file path="/Main.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395904002367" ignored="false" />
     <file path="/MainFrame.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395950384583" ignored="false" />
     <file path="/Tasks.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395870501188" ignored="false" />
-    <file path="/Dummy.txt" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395943306413" ignored="false" />
+    <file path="/Dummy.txt" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395950919870" ignored="false" />
     <file path="$USER_HOME$/Desktop/AccountService/src/Server/Statistics.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395863864797" ignored="false" />
     <file path="/a.dummy" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395934555873" ignored="false" />
-    <file path="/Task7.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395933295035" ignored="false" />
-    <file path="/Task9.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395935504208" ignored="false" />
-    <file path="/Task8.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395947649625" ignored="false" />
-    <file path="/Task19.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395950365300" ignored="false" />
+    <file path="/Task7.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951185969" ignored="false" />
+    <file path="/Task9.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951198411" ignored="false" />
+    <file path="/Task8.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951191879" ignored="false" />
+    <file path="/Task19.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951204768" ignored="false" />
+    <file path="/Task5.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951174419" ignored="false" />
+    <file path="/Task6.java" changelist="575e8f0a-a268-42dd-bc51-aaab3b7e5d24" time="1395951180210" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +96,14 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Task.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task.java">
+        <entry file="file://$PROJECT_DIR$/src/task/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="36" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="18" column="33" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#Task#0;class#Task#0" expanded="false" />
+                <element signature="method#readLine#0;class#Task#0" expanded="false" />
+                <element signature="method#readInt#0;class#Task#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +111,9 @@
       <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="imports" expanded="false" />
                 <element signature="method#Matrix#0;class#Matrix#0" expanded="false" />
                 <element signature="docComment;method#Matrix#1;class#Matrix#0" expanded="false" />
                 <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
@@ -157,31 +165,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task19.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task19.java">
+      <file leaf-file-name="Task19.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/task/Task19.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="64" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.11805555">
               <folding>
-                <element signature="e#164#776#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#192#804#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vector.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/matrix/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="61" selection-start="430" selection-end="430" vertical-scroll-proportion="0.35132033">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
+            <state line="26" column="37" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,13 +189,60 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
+            <state line="83" column="28" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#3374#3568#0" expanded="true" />
-                <element signature="e#3549#3550#0" expanded="true" />
-                <element signature="e#5689#5884#0" expanded="true" />
-                <element signature="e#5865#5866#0" expanded="true" />
+                <element signature="e#2673#2867#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
+                <element signature="e#3390#3584#0" expanded="true" />
+                <element signature="e#3565#3566#0" expanded="true" />
+                <element signature="e#5705#5900#0" expanded="true" />
+                <element signature="e#5881#5882#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task5.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task6.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task7.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task8.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task9.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task/Task9.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,11 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/Vector.java" />
-        <option value="$PROJECT_DIR$/src/matrix/Vector.java" />
-        <option value="$PROJECT_DIR$/src/Task5.java" />
-        <option value="$PROJECT_DIR$/src/Tasks.java" />
         <option value="$PROJECT_DIR$/src/Task6.java" />
         <option value="$PROJECT_DIR$/src/Task7.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
@@ -233,6 +274,13 @@
         <option value="$PROJECT_DIR$/src/Task19.java" />
         <option value="$PROJECT_DIR$/src/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/matrix/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/task/Task.java" />
+        <option value="$PROJECT_DIR$/src/task/Task5.java" />
+        <option value="$PROJECT_DIR$/src/task/Task6.java" />
+        <option value="$PROJECT_DIR$/src/task/Task7.java" />
+        <option value="$PROJECT_DIR$/src/task/Task8.java" />
+        <option value="$PROJECT_DIR$/src/task/Task9.java" />
+        <option value="$PROJECT_DIR$/src/task/Task19.java" />
       </list>
     </option>
   </component>
@@ -299,6 +347,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MatrixWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MatrixWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,16 +605,21 @@
       <created>1395872177221</created>
       <updated>1395872177221</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed console out&#10;New tasks: 7, 8, 9, 19">
+      <created>1395950930189</created>
+      <updated>1395950930189</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -563,11 +634,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67112595" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67112595" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32887402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -610,7 +680,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed frame positions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed console out&#10;New tasks: 7, 8, 9, 19" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -626,6 +696,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Changed file structure" />
     <MESSAGE value="Changed frame positions" />
+    <MESSAGE value="Changed console out&#10;New tasks: 7, 8, 9, 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -650,37 +721,9 @@
         <state line="325" column="23" selection-start="10184" selection-end="10184" vertical-scroll-proportion="0.7017544" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="79" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="59" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="0" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="702" selection-end="702" vertical-scroll-proportion="0.33180252">
+        <state line="6" column="5" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -699,39 +742,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="0" selection-end="690" vertical-scroll-proportion="0.20659722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task19.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#164#776#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3374#3568#0" expanded="true" />
-            <element signature="e#3549#3550#0" expanded="true" />
-            <element signature="e#5689#5884#0" expanded="true" />
-            <element signature="e#5865#5866#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#Matrix#0;class#Matrix#0" expanded="false" />
             <element signature="docComment;method#Matrix#1;class#Matrix#0" expanded="false" />
             <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
@@ -782,17 +797,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task.java">
+    <entry file="file://$PROJECT_DIR$/src/matrix/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="36" selection-start="1993" selection-end="1993" vertical-scroll-proportion="0.0">
+        <state line="26" column="37" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix/Vector.java">
+    <entry file="file://$PROJECT_DIR$/src/task/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="61" selection-start="430" selection-end="430" vertical-scroll-proportion="0.35132033">
+        <state line="18" column="33" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#Task#0;class#Task#0" expanded="false" />
+            <element signature="method#readLine#0;class#Task#0" expanded="false" />
+            <element signature="method#readInt#0;class#Task#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="28" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2673#2867#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#3390#3584#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#5705#5900#0" expanded="true" />
+            <element signature="e#5881#5882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task/Task19.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="44" selection-end="44" vertical-scroll-proportion="0.11805555">
+          <folding>
+            <element signature="e#192#804#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
