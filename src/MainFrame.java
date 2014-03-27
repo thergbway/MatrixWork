@@ -15,9 +15,9 @@ public class MainFrame extends JFrame {
             "4 Not done yet",
             "5 Транспонирование квадратной матрицы",
             "6 Вычисление евклидовой нормы матрицы",
-            "7 Not done yet",
-            "8 Not done yet",
-            "9 Not done yet",
+            "7 Поворот матрицы на 90, 180, 270 градусов",
+            "8 Определитель матрицы",
+            "9 Вычитание из строк их среднего арифметического",
             "10 Not done yet",
             "11 Not done yet",
             "12 Not done yet",
@@ -27,7 +27,7 @@ public class MainFrame extends JFrame {
             "16 Not done yet",
             "17 Not done yet",
             "18 Not done yet",
-            "19 Not done yet",
+            "19 Матрица с уменьшающимися характеристиками столбцов",
             "20 Not done yet",
     };
 
@@ -93,21 +93,21 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task7();
                     }
                 };
             case 8:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task8();
                     }
                 };
             case 9:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task9();
                     }
                 };
             case 10:
@@ -177,7 +177,7 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task19();
                     }
                 };
             case 20:

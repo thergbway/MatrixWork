@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.text.DefaultCaret;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +13,7 @@ abstract class Task {
     private static int MIN_HEIGHT= 500;
     private static final int FRAME_POSITION_X= 600;
     private static final int FRAME_POSITION_Y= 200;
+
     public Task(String taskTitle){
         frame= new JFrame(taskTitle);
         frame.setBounds(FRAME_POSITION_X, FRAME_POSITION_Y, frame.getWidth(), frame.getHeight());
@@ -29,6 +31,11 @@ abstract class Task {
             }
         });
 
+        JScrollPane jScrollPane= new JScrollPane(textArea);
+        jScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        DefaultCaret caret = (DefaultCaret)textArea.getCaret();
+        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
+
         GridBagConstraints gbc= new GridBagConstraints();
         gbc.fill= GridBagConstraints.BOTH;
         gbc.gridheight= 1;
@@ -37,7 +44,7 @@ abstract class Task {
         gbc.gridy= 0;
         gbc.weightx= 1;
         gbc.weighty= 1;
-        gbl.setConstraints(textArea, gbc);
+        gbl.setConstraints(jScrollPane, gbc);
 
         gbc= new GridBagConstraints();
         gbc.fill= GridBagConstraints.HORIZONTAL;
@@ -50,15 +57,18 @@ abstract class Task {
         gbc.weighty= 0;
         gbl.setConstraints(textField, gbc);
 
-        frame.add(textArea);
+        textField.setEnabled(false);
+
+        textArea.setLineWrap(true);
+        textArea.setEditable(false);
+
+        frame.add(jScrollPane);
         frame.add(textField);
 
         frame.setSize(MIN_WEIGHT,MIN_HEIGHT);
         frame.setMinimumSize(new Dimension(MIN_WEIGHT,MIN_HEIGHT));
 
-        textArea.setEditable(false);
-        textField.setEnabled(false);
-
+        frame.pack();
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setVisible(true);
         execute();
