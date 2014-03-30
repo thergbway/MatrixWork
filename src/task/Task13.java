@@ -2,9 +2,9 @@ package task;
 
 import matrix.Matrix;
 
-public class Task8 extends Task {
-    public Task8(){
-        super("#8");
+public class Task13 extends Task {
+    public Task13(){
+        super("#13");
     }
     @Override
     public void execute() {
@@ -14,9 +14,9 @@ public class Task8 extends Task {
                 textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int value= readInt();
                 textArea.append("Введено " + value + "\n");
-                Matrix m= Matrix.getRandomizedMatrix(value);
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Определитель матрицы: " + m.getDeterminant() + "\n\n");
+                Matrix m= Matrix.getRandomizedMatrixWithZeroes(value, 20);
+                textArea.append("Исходная матрица с нулями: \n\n" + m + "\n\n");
+                textArea.append("Матрица с нулевыми элементами в конце строк : \n\n" + m.getMatrixWithZeroEndingRows());
             }
         }).start();
     }

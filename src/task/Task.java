@@ -16,6 +16,9 @@ abstract class Task {
     private static final int FRAME_POSITION_X= 600;
     private static final int FRAME_POSITION_Y= 200;
 
+    /**
+     * @param taskTitle Название задачи
+     */
     public Task(String taskTitle){
         frame= new JFrame(taskTitle);
         frame.setBounds(FRAME_POSITION_X, FRAME_POSITION_Y, frame.getWidth(), frame.getHeight());
@@ -76,7 +79,15 @@ abstract class Task {
         execute();
     }
 
+    /**
+     * Метод, выполняющий запуск задания
+     */
     public abstract void execute();
+
+    /**
+     * Чтение строки с ожидание ввода
+     * @return прочитанная строка
+     */
     protected String readLine(){
         textField.setEnabled(true);
 
@@ -93,6 +104,11 @@ abstract class Task {
         textField.setText("");
         return result;
     }
+
+    /**
+     * Ввод числа в проверкой корректности и ожиданием ввода
+     * @return положительное число
+     */
     protected int readInt(){
         boolean correctInput= false;
         int value= -1;

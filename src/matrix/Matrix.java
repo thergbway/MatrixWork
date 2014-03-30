@@ -44,7 +44,35 @@ public class Matrix{
         }
     }
     public Matrix(Matrix m){
-        vectors= m.vectors.clone();
+        vectors= new Vector[m.vectors.length];
+        for (int i = 0; i < vectors.length; i++) {
+            vectors[i] = m.vectors[i].clone();
+        }
+    }
+
+    /**
+     * Устанавливает на указанное место в матрице её минимальный элемент,
+     * а на его месте - указанный элемент
+     * @param row индекс строки
+     * @param column индекс столбца
+     */
+    public void setMinToPosition(int row, int column){
+        int minIndexRow = -1;
+        int minIndexColumn = -1;
+
+        float currentMin= Float.POSITIVE_INFINITY;
+        for (int i = 0; i < vectors.length; i++) {
+            for (int j = 0; j < vectors[0].size(); j++) {
+                if(currentMin >= getValue(i, j)){
+                    minIndexRow = i;
+                    minIndexColumn = j;
+                    currentMin = getValue(i, j);
+                }
+            }
+        }
+
+        swapColumns(minIndexColumn, column);
+        swapRows(minIndexRow, row);
     }
 
     public void setValue(int row, int column, float value){
@@ -78,6 +106,38 @@ public class Matrix{
     }
 
     /**
+     * Finds one dimension array representing this matrix
+     * @return such array
+     */
+    private float[] getOneDimensionArray(){
+        final int diagonalSize= vectors.length;
+        float[] values= new float[diagonalSize * diagonalSize];
+        Iterator it= new Iterator();
+        for (int i = 0; i < values.length; i++) {
+            values[i]= it.next();
+        }
+        return values;
+    }
+
+    /**
+     * Finds two dimension array representing this matrix
+     * @return such array
+     */
+    private float[][] getTwoDimensionArray(){
+        final int diagonalSize= vectors.length;
+        float[][] values= new float[diagonalSize][diagonalSize];
+        Iterator it = new Iterator();
+
+        for (int i = 0; i < diagonalSize; i++) {
+            for (int j = 0; j < diagonalSize; j++) {
+                values[i][j] = it.next();
+            }
+        }
+
+        return values;
+    }
+
+    /**
      * Обменять строки матрицы
      * @param indexA номер первой строки
      * @param indexB номер второй строки
@@ -99,6 +159,12 @@ public class Matrix{
         Vector b= getVectorColumn(indexB);
         setVectorColumn(indexB, a);
         setVectorColumn(indexA, b);
+    }
+
+    public void swapElements(int rowA, int columnA, int rowB, int columnB){
+        final float temp= vectors[rowA].getCoord(columnA);
+        vectors[rowA].setCoord(columnA, vectors[rowB].getCoord(columnB));
+        vectors[rowB].setCoord(columnB, temp);
     }
 
     /**
@@ -164,6 +230,126 @@ public class Matrix{
     }
 
     /**
+     * Задание 20. Возвращает матрицу, в которой главная диагональ
+     * заполнена убывающими элементами, начиная с максимального в позиции [0;0]
+     * @return Искомая матрица
+     */
+    public Matrix getMatrixOfIncreasingDiagonalValues(){
+        //validation
+        if(vectors.length != vectors[0].size())
+            throw new IllegalArgumentException("Matrix must be square one");
+
+        Matrix result= new Matrix(this);
+        final int diagonalSize= vectors.length;
+
+        float[] maxValues= result.getOneDimensionArray();
+        Arrays.sort(maxValues);//ascending order
+
+        for (int i = 0; i < diagonalSize; i++) {
+            Iterator it= result.new Iterator();
+            while (it.hasNext()){
+                if(maxValues[maxValues.length - 1 - i] == it.next())
+                    break;
+            }
+            result.swapElements(i, i, it.getCurrRow(), it.getCurrColumn());
+        }
+
+        return result;
+    }
+
+    /**
+     * Поиск количеств элементов- локальных минимумов
+     * Для задания 17
+     * @return количество локальных минимумов
+     */
+    public int getLocalMinimumCount(){
+        if(vectors.length < 3 || vectors[0].size() < 3)
+            return 0;
+
+        int localMinimumCount= 0;
+
+        for (int i = 1; i < vectors.length - 1; i++) {
+            for (int j = 1; j < vectors[0].size() - 1; j++) {
+                float current= getValue(i, j);
+
+                float v1= getValue(i - 1, j - 1);
+                float v2= getValue(i - 1, j);
+                float v3= getValue(i - 1, j + 1);
+                float v4= getValue(i, j - 1);
+                float v5= getValue(i, j + 1);
+                float v6= getValue(i + 1, j - 1);
+                float v7= getValue(i + 1, j);
+                float v8= getValue(i+1, j+1);
+
+                if(current < v1 &&
+                        current < v2 &&
+                        current < v3 &&
+                        current < v4 &&
+                        current < v5 &&
+                        current < v6 &&
+                        current < v7 &&
+                        current < v8)
+                    ++localMinimumCount;
+            }
+        }
+        return localMinimumCount;
+    }
+
+    /**
+     * Поиск количеств элементов- локальных максимумов
+     * Для задания 18
+     * @return массив локальных максимумов
+     */
+    public Float[] getLocalMaximums(){
+        if(vectors.length < 3 || vectors[0].size() < 3)
+            return new Float[0];
+
+        ArrayList<Float> maximums = new ArrayList<Float>();
+
+        for (int i = 1; i < vectors.length - 1; i++) {
+            for (int j = 1; j < vectors[0].size() - 1; j++) {
+                float current= getValue(i, j);
+
+                float v1= getValue(i - 1, j - 1);
+                float v2= getValue(i - 1, j);
+                float v3= getValue(i - 1, j + 1);
+                float v4= getValue(i, j - 1);
+                float v5= getValue(i, j + 1);
+                float v6= getValue(i + 1, j - 1);
+                float v7= getValue(i + 1, j);
+                float v8= getValue(i+1, j+1);
+
+                if(current > v1 &&
+                        current > v2 &&
+                        current > v3 &&
+                        current > v4 &&
+                        current > v5 &&
+                        current > v6 &&
+                        current > v7 &&
+                        current > v8)
+                    maximums.add(current);
+            }
+        }
+        return maximums.toArray(new Float[0]);
+    }
+
+    /**
+     * Поиск максимального из локальных максимумов
+     * Для задания 18
+     * @return искомый максимум или NaN, если максимум не найден
+     */
+    public float getMaxLocalMaximum(){
+        Float[] maximums= getLocalMaximums();
+
+        if(maximums.length == 0)
+            return Float.NaN;
+
+        Arrays.sort(maximums);
+
+        return maximums[maximums.length - 1];
+    }
+
+    /**
      *
      * @return евклидова норма матрицы
      */
@@ -200,6 +386,40 @@ public class Matrix{
     }
 
     /**
+     * Для задания 16. Построение матрицы, у которой суммы каждой строки увеличиваются
+     * @return матрица, у которой суммы каждой строки увеличиваются
+     */
+    public Matrix getMatrixWithIncreasingRowSums(){
+        Map<Float, Vector> map= new TreeMap<Float, Vector>();
+        for (int i = 0; i < vectors.length; i++) {
+            map.put(getRowSum(i), getVectorRow(i));
+        }
+        Collection<Vector> vectorCollection= map.values();
+        Vector[] vectors= vectorCollection.toArray(new Vector[0]);
+        return new Matrix(vectors);
+    }
+
+    /**
+     * Поиск количества седловых точек матрицы.
+     * Для задания 15.
+     * @return количество седловых точек матрицы
+     */
+    public int getSaddlePointCount(){
+        int saddlePointCount= 0;
+
+        for (int i = 0; i < vectors.length; i++) {
+            for (int j = 0; j < vectors[0].size(); j++) {
+                Vector row= getVectorRow(i);
+                Vector column= getVectorColumn(j);
+
+                if(row.isMin(j) && column.isMax(i))
+                    ++saddlePointCount;
+            }
+        }
+        return saddlePointCount;
+    }
+
+    /**
      * Возвращает матрицу, в которой столбцы идут в порядке увеличения их характеристок
      * Характеристика столбца- сумма модулей его элементов
      * Необходима для 19 задания
@@ -221,11 +441,69 @@ public class Matrix{
         return temp.get270DegreeTurnedMatrix();
     }
 
+    /**
+     * Возвращает матрицу, в которой элементы равные нулю располагаются в конце строк
+     * @return искомая матрица
+     */
+    public Matrix getMatrixWithZeroEndingRows(){
+        Matrix rlt= new Matrix(this);
+
+        for (int i = 0; i < vectors.length; i++) {
+            List<Float> nonZeroList= new ArrayList<Float>();
+            List<Float> zeroList= new ArrayList<Float>();
+            for (int j = 0; j < vectors[0].size(); j++) {
+                float current = getValue(i, j);
+                if(current == 0.0f)
+                    zeroList.add(current);
+                else
+                    nonZeroList.add(current);
+            }
+            List<Float> finalList= new ArrayList<Float>();
+            finalList.addAll(nonZeroList);
+            finalList.addAll(zeroList);
+
+            Float[] currentVector= finalList.toArray(new Float[0]);
+            float[] currentVectorPrimitive= new float[currentVector.length];
+            for (int p = 0; p < currentVectorPrimitive.length; p++)
+                currentVectorPrimitive[p]= currentVector[p];
+            rlt.setVectorRow(i, new Vector(currentVectorPrimitive));
+        }
+
+        return rlt;
+    }
+
     public float getColumnCharacteristic(int columnIndex){
         float result= 0.0f;
         for (int i = 0; i < vectors.length; i++)
             result+= abs(getValue(i, columnIndex));
         return result;
+    }
+
+    /**
+     * Удаляет из матрицы нулевые строки и столбцы
+     */
+    public void removeZeroRowsAndColumns(){
+        for (int i = vectors.length - 1; i >= 0; --i)
+            if(vectors[i].isZero())
+                removeRow(i);
+
+        if(vectors.length > 0)
+            for (int i = vectors[0].size() - 1; i >= 0 ; --i)
+                if(getVectorColumn(i).isZero())
+                    removeColumn(i);
+    }
+
+    /**
+     * Поиск суммы элементов строки матрицы
+     * @param rowIndex индекс строки
+     * @return сумма элементов строки
+     */
+    public float getRowSum(int rowIndex){
+        float sum = 0.0f;
+        for (int i = 0; i < vectors[0].size(); i++) {
+            sum += getValue(rowIndex, i);
+        }
+        return sum;
     }
 
     /**
@@ -245,6 +523,32 @@ public class Matrix{
     }
 
     /**
+     * Удаление из матрицы всех столбцов и строк, содержащих максимальный элемент матрицы
+     * Для задания 10
+     */
+    public void removeRowAndColumnsWithMaximum(){
+
+        float currentMax= Float.NEGATIVE_INFINITY;
+        for (int i = 0; i < vectors.length; i++) {
+            for (int j = 0; j < vectors[0].size(); j++) {
+                if(currentMax <= getValue(i, j))
+                    currentMax= getValue(i, j);
+            }
+        }
+
+        for (int i = vectors.length - 1; i >= 0 ; --i) {
+            if(getVectorRow(i).isHolding(currentMax))
+                removeRow(i);
+        }
+
+        if(vectors.length > 0)
+            for (int i = vectors[0].size() - 1; i >= 0 ; --i) {
+                if(getVectorColumn(i).isHolding(currentMax))
+                    removeColumn(i);
+            }
+    }
+
+    /**
      * Удаляет из матрицы столбец
      * @param columnIndex индекс столбца
      */
@@ -256,18 +560,44 @@ public class Matrix{
     }
 
     /**
-     *
+     * Генерация матрицы случайных чисел
      * @param dimension размерность
      * @return квадратная матрица случайных чисел
      */
     public static Matrix getRandomizedMatrix(int dimension){
+        return getRandomizedMatrixWithZeroes(dimension, 0);
+    }
+
+    /**
+     * Генерация матрицы случайных чисел с преоблажанием нулей
+     * @param dimension размерность
+     * @param zeroPercentage процент нулевых элементов(от 0 до 100)
+     * @return квадратная матрица случайных чисел c преобладанием нулей
+     */
+    public static Matrix getRandomizedMatrixWithZeroes(int dimension, int zeroPercentage){
+        return getRandomizedMatrixWithDuplicates(dimension, 0.0f, zeroPercentage);
+    }
+
+    /**
+     * Генерация квадратной матрицы случайных чисел с дублями
+     * @param dimension размерность
+     * @param duplicatesValue значение элементов - дублей
+     * @param duplicatePercentage частота появления дубля
+     * @return квадратная матрица случайных чисел с дублями
+     */
+    public static Matrix getRandomizedMatrixWithDuplicates(int dimension, float duplicatesValue, int duplicatePercentage){
         Matrix rlt= new Matrix(dimension);
         Matrix.Iterator it= rlt.new Iterator();
         Random rand= new Random();
 
         while(it.hasNext()){
             it.next();
-            it.set(rand.nextFloat()*2.0f*dimension - dimension);
+            float newValue;
+            if(rand.nextInt(101) < duplicatePercentage)
+                newValue= duplicatesValue;
+            else
+                newValue= rand.nextFloat()*2.0f*dimension - dimension;
+            it.set(newValue);
         }
 
         return rlt;
@@ -282,6 +612,84 @@ public class Matrix{
         }
         str.append("]");
         return str.toString();
+    }
+
+    /**
+     * Задание 14. Представить матрицу с округленными до целого числа элементами
+     * @return строка с данным представлением
+     */
+    public String showWithIntValues(){
+        StringBuilder str= new StringBuilder("[\n");
+        for(Vector v: vectors){
+            str.append(v.showWithIntValues());
+            str.append("\n");
+        }
+        str.append("]");
+        return str.toString();
+    }
+
+    /**
+     * Выполняет циклический сдвиг матрицы влево на shift позиций
+     * Для задания 2
+     * @param shift количество позиций для сдвига
+     * @return ссылка на объект, у которого был вызван метод
+     */
+    public Matrix leftShift(int shift){
+        final int matrixWidth= vectors[0].size();
+        for (int i = 0; i < shift; i++) {
+            for (int j = 1; j < matrixWidth; j++) {
+                swapColumns(j-1, j);
+            }
+        }
+        return this;
+    }
+
+    /**
+     * Выполняет циклический сдвиг матрицы вправо на shift позиций
+     * Для задания 2
+     * @param shift количество позиций для сдвига
+     * @return ссылка на объект, у которого был вызван метод
+     */
+    public Matrix rightShift(int shift){
+        final int matrixWidth= vectors[0].size();
+        for (int i = 0; i < shift; i++) {
+            for (int j = matrixWidth-1; j >= 1 ; --j) {
+                swapColumns(j, j-1);
+            }
+        }
+        return this;
+    }
+
+    /**
+     * Выполняет циклический сдвиг матрицы вверх на shift позиций
+     * Для задания 2
+     * @param shift количество позиций для сдвига
+     * @return ссылка на объект, у которого был вызван метод
+     */
+    public Matrix upShift(int shift){
+        final int matrixHeight= vectors.length;
+        for (int i = 0; i < shift; i++) {
+            for (int j = 1; j < matrixHeight; j++) {
+                swapRows(j-1 , j);
+            }
+        }
+        return this;
+    }
+
+    /**
+     * Выполняет циклический сдвиг матрицы вниз на shift позиций
+     * Для задания 2
+     * @param shift количество позиций для сдвига
+     * @return ссылка на объект, у которого был вызван метод
+     */
+    public Matrix downShift(int shift) {
+        final int matrixHeight= vectors.length;
+        for (int i = 0; i < shift; i++) {
+            for (int j = matrixHeight-1; j >= 1 ; --j) {
+                swapRows(j-1, j);
+            }
+        }
+        return this;
     }
 
     public class Iterator{
@@ -303,6 +711,12 @@ public class Matrix{
         }
         public void set(float value){
            vectors[row].setCoord(column, value);
+        }
+        public int getCurrRow(){
+            return row;
+        }
+        public int getCurrColumn(){
+            return column;
         }
     }
 }

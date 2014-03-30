@@ -2,9 +2,9 @@ package task;
 
 import matrix.Matrix;
 
-public class Task8 extends Task {
-    public Task8(){
-        super("#8");
+public class Task16 extends Task {
+    public Task16(){
+        super("#16");
     }
     @Override
     public void execute() {
@@ -16,7 +16,8 @@ public class Task8 extends Task {
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Определитель матрицы: " + m.getDeterminant() + "\n\n");
+                textArea.append("Матрица, в которой строки переставлены в порядке увеличения их суммы: \n\n" +
+                        m.getMatrixWithIncreasingRowSums() + "\n\n");
             }
         }).start();
     }

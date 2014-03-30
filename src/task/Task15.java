@@ -2,9 +2,9 @@ package task;
 
 import matrix.Matrix;
 
-public class Task8 extends Task {
-    public Task8(){
-        super("#8");
+public class Task15 extends Task {
+    public Task15(){
+        super("#15");
     }
     @Override
     public void execute() {
@@ -16,7 +16,7 @@ public class Task8 extends Task {
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Определитель матрицы: " + m.getDeterminant() + "\n\n");
+                textArea.append("Количество седловых точек : " + m.getSaddlePointCount());
             }
         }).start();
     }

@@ -2,9 +2,9 @@ package task;
 
 import matrix.Matrix;
 
-public class Task8 extends Task {
-    public Task8(){
-        super("#8");
+public class Task14 extends Task {
+    public Task14(){
+        super("#14");
     }
     @Override
     public void execute() {
@@ -16,7 +16,7 @@ public class Task8 extends Task {
                 textArea.append("Введено " + value + "\n");
                 Matrix m= Matrix.getRandomizedMatrix(value);
                 textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Определитель матрицы: " + m.getDeterminant() + "\n\n");
+                textArea.append("Матрица с округленными до целого числа элементами : \n\n" + m.showWithIntValues());
             }
         }).start();
     }

@@ -12,7 +12,7 @@ public class MainFrame extends JFrame {
     private static final int TASK_COUNT= 20;
     private static final String[] TASK_NAMES= new String[]{
             "1 Not done yet",
-            "2 Not done yet",
+            "2 Сдвиги матриц",
             "3 Not done yet",
             "4 Not done yet",
             "5 Транспонирование квадратной матрицы",
@@ -20,19 +20,22 @@ public class MainFrame extends JFrame {
             "7 Поворот матрицы на 90, 180, 270 градусов",
             "8 Определитель матрицы",
             "9 Вычитание из строк их среднего арифметического",
-            "10 Not done yet",
-            "11 Not done yet",
-            "12 Not done yet",
-            "13 Not done yet",
-            "14 Not done yet",
-            "15 Not done yet",
-            "16 Not done yet",
-            "17 Not done yet",
-            "18 Not done yet",
+            "10 Матрица без строк и столбцов с макс. элементом",
+            "11 Матрица без нулевых столбцов и строк",
+            "12 Матрица, где в указанном месте минимум",
+            "13 Матрица с нулевыми элементами в конце строк",
+            "14 Матрица с округленными до целого числа элементами",
+            "15 Количество седловых точек",
+            "16 Матрица с увеличивающейся суммой строк",
+            "17 Число локальных минимумов",
+            "18 Поиск наибольшего локального максимума",
             "19 Матрица с уменьшающимися характеристиками столбцов",
-            "20 Not done yet",
+            "20 Матрица с макс. элементами на главной диагонали",
     };
 
+    /**
+     * @param s frame title
+     */
     public MainFrame(String s){
         super(s);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -60,7 +63,7 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task2();
                     }
                 };
             case 3:
@@ -116,63 +119,63 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task10();
                     }
                 };
             case 11:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task11();
                     }
                 };
             case 12:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task12();
                     }
                 };
             case 13:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task13();
                     }
                 };
             case 14:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task14();
                     }
                 };
             case 15:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task15();
                     }
                 };
             case 16:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task16();
                     }
                 };
             case 17:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task17();
                     }
                 };
             case 18:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task18();
                     }
                 };
             case 19:
@@ -186,7 +189,7 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task20();
                     }
                 };
             default:

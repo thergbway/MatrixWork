@@ -1,4 +1,8 @@
 public class Main {
+    /**
+     * Точка входа в приложение
+     * @param args аргументы, передаваемые при запуске
+     */
     public static void main(String... args){
         MainFrame mainFrame= new MainFrame("Java@EPAM task.Task 1");
         mainFrame.setMinimumSize(mainFrame.getPreferredSize());

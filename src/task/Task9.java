@@ -4,7 +4,7 @@ import matrix.Matrix;
 
 public class Task9 extends Task {
     public Task9(){
-        super("task.Task 9");
+        super("#9");
     }
     @Override
     public void execute() {
