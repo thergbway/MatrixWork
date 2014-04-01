@@ -150,6 +150,36 @@ public class Matrix{
     }
 
     /**
+     * Поиск максимально длинной последовательности увеличивающихся элементов матрицы, идущих подряд
+     * @return найденная последовательность
+     */
+    public Float[] getMaxIncreasingElements(){
+        List<Float> maxSequence = new LinkedList<Float>();
+        List<Float> list = new LinkedList<Float>();
+        Iterator it = new Iterator();
+        float current = 0.0f;
+
+        while (it.hasNext()){
+            current = it.next();
+            if(list.isEmpty() || list.get(list.size() - 1) <= current)
+                list.add(current);
+            else{
+                if(maxSequence.size() < list.size()) {
+                    maxSequence.clear();
+                    maxSequence.addAll(list);
+                }
+                list.clear();
+                list.add(current);
+            }
+        }
+        if(maxSequence.size() < list.size()) {
+            maxSequence.clear();
+            maxSequence.addAll(list);
+        }
+        return maxSequence.toArray(new Float[0]);
+    }
+
+    /**
      * Обменять столбцы матрицы
      * @param indexA номер первого столбца
      * @param indexB номер второго столбца
@@ -507,6 +537,38 @@ public class Matrix{
     }
 
     /**
+     * Создание массива сумм элементов матрицы между первым и вторым положительным элементом каждой строки
+     * Для задания 4
+     * @return массив сумм
+     */
+    public Float[] getSumBetweenEachPositivesForRows(){
+        List<Float> sumsList = new LinkedList<Float>();
+
+        for (int i = 0; i < vectors.length; i++) {
+            int foundPositives = 0;
+            float rowSum = 0.0f;
+            for (int j = 0; j < vectors[i].size(); j++) {
+                float current = vectors[i].getCoord(j);
+                if(current > 0.0f){
+                    ++foundPositives;
+                    if(foundPositives == 1)
+                        continue;
+                    else
+                        break;
+                }
+                if(foundPositives == 1)
+                    rowSum += current;
+            }
+            if(foundPositives == 2)
+                sumsList.add(rowSum);
+            else
+                sumsList.add(0.0f);
+        }
+
+        return sumsList.toArray(new Float[0]);
+    }
+
+    /**
      * Удаляет из матрицы строку
      * @param rowIndex индекс строки
      */
@@ -629,6 +691,19 @@ public class Matrix{
     }
 
     /**
+     * Для задания 1. Перемещает строки матрицы в порядке увеличения значений
+     * элементов k-го столбца
+     * @param columnIndex индекс столбца k
+     */
+    public void sortRowsByColumn(int columnIndex){
+        Map<Float, Vector> map = new TreeMap<Float, Vector>();
+        for (int i = 0; i < vectors.length; i++)
+            map.put(vectors[i].getCoord(columnIndex), vectors[i]);
+        Vector[] newVectors = new ArrayList<Vector>(map.values()).toArray(new Vector[0]);
+        vectors = newVectors;
+    }
+
+    /**
      * Выполняет циклический сдвиг матрицы влево на shift позиций
      * Для задания 2
      * @param shift количество позиций для сдвига
@@ -670,7 +745,7 @@ public class Matrix{
         final int matrixHeight= vectors.length;
         for (int i = 0; i < shift; i++) {
             for (int j = 1; j < matrixHeight; j++) {
-                swapRows(j-1 , j);
+                swapRows(j - 1, j);
             }
         }
         return this;
@@ -686,7 +761,7 @@ public class Matrix{
         final int matrixHeight= vectors.length;
         for (int i = 0; i < shift; i++) {
             for (int j = matrixHeight-1; j >= 1 ; --j) {
-                swapRows(j-1, j);
+                swapRows(j - 1, j);
             }
         }
         return this;

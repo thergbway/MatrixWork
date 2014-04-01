@@ -11,10 +11,10 @@ public class MainFrame extends JFrame {
     private static final int FRAME_POSITION_Y= 200;
     private static final int TASK_COUNT= 20;
     private static final String[] TASK_NAMES= new String[]{
-            "1 Not done yet",
+            "1 Упорядочение строк по элементам столбца k",
             "2 Сдвиги матриц",
-            "3 Not done yet",
-            "4 Not done yet",
+            "3 Наибольшее число возрастающих элементов идущих подряд",
+            "4 Суммы между положительными эл. в строках",
             "5 Транспонирование квадратной матрицы",
             "6 Вычисление евклидовой нормы матрицы",
             "7 Поворот матрицы на 90, 180, 270 градусов",
@@ -56,7 +56,7 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task1();
                     }
                 };
             case 2:
@@ -70,14 +70,14 @@ public class MainFrame extends JFrame {
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task3();
                     }
                 };
             case 4:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
+                        new Task4();
                     }
                 };
             case 5:

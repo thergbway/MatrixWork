@@ -137,12 +137,12 @@ public class Vector implements Cloneable{
 
         for(int i= 0; i < coord.length - 1; ++i){
             str.append(" ");
-            str.append(String.format("%15.8f", coord[i]));
+            str.append(String.format("%10.2f", coord[i]));
             str.append(" ");
         }
 
         str.append(" ");
-        str.append(String.format("%15.8f", coord[coord.length - 1]));
+        str.append(String.format("%10.2f", coord[coord.length - 1]));
         str.append("]");
         return str.toString();
     }
