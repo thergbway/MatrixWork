@@ -1,6 +1,7 @@
 package task;
 
 import matrix.Matrix;
+import matrix.MatrixUtils;
 
 public class Task1 extends Task {
     public Task1(){
@@ -11,22 +12,22 @@ public class Task1 extends Task {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
+                setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int value= readInt();
-                textArea.append("Введено " + value + "\n");
-                Matrix m= Matrix.getRandomizedMatrix(value);
+                appendText("Введено " + value + "\n");
+                Matrix m= MatrixUtils.getRandomizedMatrix(value);
 
                 int columnIndex= -1;
-                textArea.append("Пожалуйста, введите число- индекс столбца, относительно которого производить упорядочение\n");
+                appendText("Пожалуйста, введите число- индекс столбца, относительно которого производить упорядочение\n");
                 columnIndex= readInt();
                 while(columnIndex < 0 || columnIndex >= value){
-                    textArea.append("Введено неправильное число, попробуйте ещё раз\n");
+                    appendText("Введено неправильное число, попробуйте ещё раз\n");
                     columnIndex= readInt();
                 }
-                textArea.append("Введено " + columnIndex + "\n");
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
+                appendText("Введено " + columnIndex + "\n");
+                appendText("Исходная матрица: \n\n" + m + "\n\n");
                 m.sortRowsByColumn(columnIndex);
-                textArea.append("Матрица упорядоченных по столбцу строк: \n\n" + m + "\n\n");
+                appendText("Матрица упорядоченных по столбцу строк: \n\n" + m + "\n\n");
             }
         }).start();
     }

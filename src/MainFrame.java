@@ -5,8 +5,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * Класс - графическое окно, в котором находятся кнопки для запуска заданий
+ */
 public class MainFrame extends JFrame {
-    private JButton[] startTaskButtons;
     private static final int FRAME_POSITION_X= 200;
     private static final int FRAME_POSITION_Y= 200;
     private static final int TASK_COUNT= 20;
@@ -42,150 +44,165 @@ public class MainFrame extends JFrame {
         setBounds(FRAME_POSITION_X, FRAME_POSITION_Y, getWidth(), getHeight());
 
         setLayout(new GridLayout(0,1));
-        startTaskButtons = new JButton[TASK_COUNT];
+        JButton[] startTaskButtons = new JButton[TASK_COUNT];
 
-        for(int i= 0; i< TASK_COUNT; ++i){
+//        for(int i= 0; i< TASK_COUNT; ++i){
+//            startTaskButtons[i]= new JButton(TASK_NAMES[i]);
+//            startTaskButtons[i].addActionListener(getActionListenerByTaskIndex(i+1));
+//            add(startTaskButtons[i]);
+//        }
+
+        int i= 0;
+        for(Task t: Task.values()){
             startTaskButtons[i]= new JButton(TASK_NAMES[i]);
-            startTaskButtons[i].addActionListener(getActionListenerByTaskIndex(i+1));
+            startTaskButtons[i].addActionListener(getActionListenerByTaskIndex(t));
             add(startTaskButtons[i]);
+            ++i;
         }
+
     }
-    private ActionListener getActionListenerByTaskIndex(int index){
-        switch (index){
-            case 1:
+
+    /**
+     * Функция, возвращающая объект - слушатель кнопок в соответствии с заданием
+     * @param task номер задания
+     * @return соответствующий слушатель кнопки
+     */
+    private ActionListener getActionListenerByTaskIndex(Task task){
+        switch (task){
+            case TASK1:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task1();
                     }
                 };
-            case 2:
+            case TASK2:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task2();
                     }
                 };
-            case 3:
+            case TASK3:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task3();
                     }
                 };
-            case 4:
+            case TASK4:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task4();
                     }
                 };
-            case 5:
+            case TASK5:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task5();
                     }
                 };
-            case 6:
+            case TASK6:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task6();
                     }
                 };
-            case 7:
+            case TASK7:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task7();
                     }
                 };
-            case 8:
+            case TASK8:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task8();
                     }
                 };
-            case 9:
+            case TASK9:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task9();
                     }
                 };
-            case 10:
+            case TASK10:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task10();
                     }
                 };
-            case 11:
+            case TASK11:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task11();
                     }
                 };
-            case 12:
+            case TASK12:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task12();
                     }
                 };
-            case 13:
+            case TASK13:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task13();
                     }
                 };
-            case 14:
+            case TASK14:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task14();
                     }
                 };
-            case 15:
+            case TASK15:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task15();
                     }
                 };
-            case 16:
+            case TASK16:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task16();
                     }
                 };
-            case 17:
+            case TASK17:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task17();
                     }
                 };
-            case 18:
+            case TASK18:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task18();
                     }
                 };
-            case 19:
+            case TASK19:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         new Task19();
                     }
                 };
-            case 20:
+            case TASK20:
                 return new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -195,5 +212,10 @@ public class MainFrame extends JFrame {
             default:
                 throw new IllegalArgumentException();
         }
+    }
+
+    private enum Task{
+        TASK1, TASK2, TASK3, TASK4, TASK5, TASK6, TASK7, TASK8, TASK9, TASK10,
+        TASK11, TASK12, TASK13, TASK14, TASK15, TASK16, TASK17, TASK18, TASK19, TASK20
     }
 }

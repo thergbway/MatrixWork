@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 
 abstract class Task {
     private JFrame frame;
-    protected JTextArea textArea;
-    protected JTextField textField;
+    private JTextArea textArea;
+    private JTextField textField;
     private final Object readLineMonitor= new Object();
     private static int MIN_WEIGHT= 800;
     private static int MIN_HEIGHT= 500;
@@ -85,6 +85,22 @@ abstract class Task {
     public abstract void execute();
 
     /**
+     * Sets text to textArea component
+     * @param str text
+     */
+    protected void setText(String str){
+        textArea.setText(str);
+    }
+
+    /**
+     * appends text to textArea component
+     * @param str text
+     */
+    protected void appendText(String str){
+        textArea.append(str);
+    }
+
+    /**
      * Чтение строки с ожидание ввода
      * @return прочитанная строка
      */
@@ -122,7 +138,7 @@ abstract class Task {
             if(value >= 1)
                 correctInput= true;
             else
-                textArea.append("Введено неправильное число, попробуйте ещё раз\n");
+                appendText("Введено неправильное число, попробуйте ещё раз\n");
         }
         return value;
     }

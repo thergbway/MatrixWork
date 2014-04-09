@@ -1,6 +1,7 @@
 package task;
 
 import matrix.Matrix;
+import matrix.MatrixUtils;
 
 public class Task16 extends Task {
     public Task16(){
@@ -11,12 +12,12 @@ public class Task16 extends Task {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
+                setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int value= readInt();
-                textArea.append("Введено " + value + "\n");
-                Matrix m= Matrix.getRandomizedMatrix(value);
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Матрица, в которой строки переставлены в порядке увеличения их суммы: \n\n" +
+                appendText("Введено " + value + "\n");
+                Matrix m= MatrixUtils.getRandomizedMatrix(value);
+                appendText("Исходная матрица: \n\n" + m + "\n\n");
+                appendText("Матрица, в которой строки переставлены в порядке увеличения их суммы: \n\n" +
                         m.getMatrixWithIncreasingRowSums() + "\n\n");
             }
         }).start();

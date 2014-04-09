@@ -1,6 +1,7 @@
 package task;
 
 import matrix.Matrix;
+import matrix.MatrixUtils;
 
 public class Task2 extends Task {
     public Task2(){
@@ -11,20 +12,20 @@ public class Task2 extends Task {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
+                setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int value= readInt();
-                textArea.append("Введено " + value + "\n");
-                textArea.append("Пожалуйста, введите число- величину сдвига\n");
+                appendText("Введено " + value + "\n");
+                appendText("Пожалуйста, введите число- величину сдвига\n");
                 int shift= readInt();
-                textArea.append("Введено " + shift + "\n");
+                appendText("Введено " + shift + "\n");
 
-                Matrix m= Matrix.getRandomizedMatrix(value);
+                Matrix m= MatrixUtils.getRandomizedMatrix(value);
 
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
-                textArea.append("Матрица после сдвига влево: \n\n" + new Matrix(m).leftShift(shift) + "\n\n");
-                textArea.append("Матрица после сдвига вправо: \n\n" + new Matrix(m).rightShift(shift) + "\n\n");
-                textArea.append("Матрица после сдвига вверх: \n\n" + new Matrix(m).upShift(shift) + "\n\n");
-                textArea.append("Матрица после сдвига вниз: \n\n" + new Matrix(m).downShift(shift) + "\n\n");
+                appendText("Исходная матрица: \n\n" + m + "\n\n");
+                appendText("Матрица после сдвига влево: \n\n" + new Matrix(m).leftShift(shift) + "\n\n");
+                appendText("Матрица после сдвига вправо: \n\n" + new Matrix(m).rightShift(shift) + "\n\n");
+                appendText("Матрица после сдвига вверх: \n\n" + new Matrix(m).upShift(shift) + "\n\n");
+                appendText("Матрица после сдвига вниз: \n\n" + new Matrix(m).downShift(shift) + "\n\n");
             }
         }).start();
     }

@@ -1,6 +1,7 @@
 package task;
 
 import matrix.Matrix;
+import matrix.MatrixUtils;
 
 import java.util.Arrays;
 
@@ -13,14 +14,14 @@ public class Task4 extends Task {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
+                setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int value= readInt();
-                textArea.append("Введено " + value + "\n");
+                appendText("Введено " + value + "\n");
 
-                Matrix m= Matrix.getRandomizedMatrix(value);
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
+                Matrix m= MatrixUtils.getRandomizedMatrix(value);
+                appendText("Исходная матрица: \n\n" + m + "\n\n");
                 Float[] sums = m.getSumBetweenEachPositivesForRows();
-                textArea.append("Суммы элементов по каждой строке между первыми двумя положительными числами: \n\n" + Arrays.toString(sums) + "\n\n");
+                appendText("Суммы элементов по каждой строке между первыми двумя положительными числами: \n\n" + Arrays.toString(sums) + "\n\n");
             }
         }).start();
     }

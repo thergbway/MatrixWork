@@ -1,6 +1,7 @@
 package task;
 
 import matrix.Matrix;
+import matrix.MatrixUtils;
 
 public class Task18 extends Task {
     public Task18(){
@@ -11,18 +12,18 @@ public class Task18 extends Task {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                textArea.setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
+                setText("Пожалуйста, введите число- размерность квадратной матрицы\n");
                 int matrixSize= readInt();
-                textArea.append("Введено " + matrixSize + "\n");
+                appendText("Введено " + matrixSize + "\n");
 
-                Matrix m= Matrix.getRandomizedMatrix(matrixSize);
-                textArea.append("Исходная матрица: \n\n" + m + "\n\n");
+                Matrix m= MatrixUtils.getRandomizedMatrix(matrixSize);
+                appendText("Исходная матрица: \n\n" + m + "\n\n");
                 float maxLocalMaximum= m.getMaxLocalMaximum();
-                textArea.append("Наибольший среди локальных максимумов: ");
+                appendText("Наибольший среди локальных максимумов: ");
                 if(!Float.isNaN(maxLocalMaximum))
-                    textArea.append("" + maxLocalMaximum);
+                    appendText("" + maxLocalMaximum);
                 else
-                    textArea.append("не найдено");
+                    appendText("не найдено");
             }
         }).start();
     }
